@@ -1,0 +1,10 @@
+stages:
+  - test
+  - build
+  - deploy
+
+test_unitaire:
+  stage: test
+  script:
+    - echo "Démarrage des tests unitaires..."
+    - pytest tests/
